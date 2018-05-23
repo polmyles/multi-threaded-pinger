@@ -38,7 +38,7 @@ def smash(i):
     while True:
         api_handler(i)
 
-pool = ThreadPool(4)
+pool = ThreadPool(12)
 results = []
 results = pool.map(smash, range(1, 100000))
 
